@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About-Me</a>
+        <a href="#contact">Gallery</a>
+        <a href="#contact">Contact-Us</a>
+    </div><br>
+
+    <span class="border trans" style="font-size:40px;">
+        <center>Welcome to the website of "Mr." Restaurent</center>
+    </span><br>
+
+    <section class="section section-dark">
+        <h2>Welcome to Mr's.</h2>
+        <p>
+            Welcome to a dining experience where exceptional flavor meets warm hospitality. We believe that a great meal is about
+            more than just food; it is about creating lasting memories in a welcoming atmosphere. Our kitchen is dedicated to using
+            the freshest, highest-quality ingredients to craft dishes that are both comforting and full of vibrant flavor. From our
+            spotlessly clean, beautifully designed dining space to our attentive, smiling team, every detail of your visit is
+            carefully curated to make you feel right at home. Whether you are celebrating a special milestone or sharing a casual
+            meal with loved ones, we are here to provide an unforgettable culinary journey.
+
+        </p>
+    </section>
+
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border trans">Image Two Text</span>
+        </div>
+        <section class="section section-dark">
+            <span>All @copy rights reserved by Swati Singh</span>
+        </section>
+    </div>
+
+    <section>
+        <img class="mySlides" src="image1.jpg" style="height:500px; width:1340px;">
+        <img class="mySlides" src="image2.jpg" style="height:500px; width:1340px;">
+        <img class="mySlides" src="image3.jpg" style="height:500px; width:1340px;">
+    </section>
+    
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+
+</body>
+
+</html>
